@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "注册";
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/form-elements.css">
+    <link rel="stylesheet" href="~/css/registr_style.css">
+
+    <title>注册</title>
+    <!-- Javascript -->
+    <script src="~/lib/jquery/dist/jquery-1.11.0.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.backstretch.min.js"></script>
+    <script src="~/lib/jquery/dist/retina-1.1.0.min.js"></script>
+    <script src="~/lib/jquery/dist/scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+                <!-- 第一行 注册信息 -->
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1>注册</h1>
+                        <div>
+                            <p>请输入个人信息，注册成为<a asp-area="" asp-controller="Home" asp-action="Index">网站</a>会员</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二行 注册填写 -->
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 form-box">
+                        <form role="form" action="#" method="get" class="registration-form">
+                            <!-- 表头提示 -->
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>请输入用户信息</h3>
+
+                                </div>
+                                <!-- <div>
+                                     <i class="fa fa-user"></i>
+                                 </div> -->
+                                <!-- 表体 -->
+                                <div class="form-bottom">
+                                    <!-- 1.IP地址
+    <div class="form-group">
+        <label class="sr-only" for="form-first-name">所在IP地址：</label>
+        <input type="text" name="form-first-name" placeholder="本地IP地址：10.01.138.1" class="form-first-name form-control" id="form-first-name" disabled readonly>
+    </div> -->
+                                    <!-- 2.用户名 -->
+                                    <div class="form-group">
+                                        <p>用户名</p>
+                                        <label class="sr-only" for="form-last-name">用户名：</label>
+                                        <input type="text" name="form-last-name" placeholder="请输入你的用户名" class="form-last-name form-control" id="form-last-name" required autofocus>
+                                    </div>
+                                    <!-- 3.个人描述 -->
+                                    <div class="form-group">
+                                        <p>个人描述</p>
+                                        <label class="sr-only" for="form-about-yourself">个人描述：</label>
+                                        <textarea name="form-about-yourself" placeholder="请输入你的个人介绍" class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+                                    </div>
+                                    <!-- 4.用户密码 -->
+                                    <div class="form-group">
+                                        <p>用户密码</p>
+                                        <label class="sr-only" for="form-password">用户密码：</label>
+                                        <input type="password" name="form-password" placeholder="请输入第一次密码" id="form-password" class="form-password form-control">
+                                    </div>
+                                    <!-- 5.重复密码 -->
+                                    <div class="form-group">
+                                        <p>重复密码</p>
+                                        <label class="sr-only" for="form-repeat-password">用户密码：</label>
+                                        <input type="password" name="form-repeat-password" placeholder="请输入第二次密码" id="form-repeat-password" class="form-repeat-password form-control">
+                                    </div>
+                                    <!-- 6.年龄 -->
+                                    <!--	<div class="form-group">
+            <p>年龄</p>
+            <label class="sr-only" for="form-age">年龄：</label>
+            <input type="number" name="form-age" placeholder="请输入你的年龄" id="form-age" class="form-age form-control" min="14" max="120" value="19">
+        </div>  -->
+                                    <!-- 7.出生日期 -->
+                                    <div class="form-group">
+                                        <p>出生日期</p>
+                                        <label class="sr-only" for="form-brithday">出生日期：</label>
+                                        <input type="date" name="form-brithday" id="form-brithday" class="form-brithday form-control">
+                                    </div>
+                                    <button type="button" class="btn btn-block">注册|Register</button>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="~/lib/jquery/dist/jquery-1.11.0.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/lib/jquery/dist/jquery.backstretch.min.js"></script>
+        <script src="~/lib/jquery/dist/retina-1.1.0.min.js"></script>
+        <script src="~/lib/jquery/dist/scripts.js"></script>
+
+</body>
+</html>

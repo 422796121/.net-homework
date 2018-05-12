@@ -1,0 +1,447 @@
+﻿@{
+    ViewData["Title"] = "主页";
+}
+
+<link rel="stylesheet" href="~/css/index_style.css" />
+
+<!-- 搜索栏 -->
+<div class="container_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/index_logo.jpg">
+            </div>
+            <div class="col-sm-7">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    <input type="text" class="form-control input-lg" placeholder="请输入关键字搜索"><span class="input-group-addon btn-lg btn-primary">搜索</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <!-- 左侧导航栏 -->
+            <div class="col-sm-3" id="left-carousel">
+                <ul class="list-group">
+                    <li class="list-group-item">浏览分类</li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">热销</li></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">新品</li></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">即将推出</li></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">优惠</li></a>
+                    <li class="list-group-item">按类型浏览</li>
+                    <a asp-area="" asp-controller="Home" asp-action="Simulation"><li class="list-group-item">休闲模拟</li></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Shooting"><li class="list-group-item">动作射击</li></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Sport"><li class="list-group-item">体育竞速</li></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Rpg"><li class="list-group-item">角色扮演</li></a>
+                    <li class="list-group-item">最近查看</li>
+                    <a asp-area="" asp-controller="Product" asp-action="Product"><li class="list-group-item">NBA 2K17</li></a>
+                </ul>
+            </div>
+            <!-- 广告栏 -->
+            <div class="col-sm-9">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/banner.jpg" alt="大型多人在线" />
+                            <div class="carousel-caption">
+                                <h1>大型多人在线</h1>
+                                <p>大型多人在线</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">点击详情</a></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/banner1.jpg" alt="体育">
+                            <div class="carousel-caption">
+                                <h1>体育</h1>
+                                <p>体育</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">点击详情</a></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/banner2.jpg" alt="日式">
+                            <div class="carousel-caption">
+                                <h1>冒险</h1>
+                                <p>冒险</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">点击详情</a></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/banner3.jpg" alt="其它">
+                            <div class="carousel-caption">
+                                <h1>其它</h1>
+                                <p>其它</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">点击详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev" role="button">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">上一页</span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next" role="button">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">下一页</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 热销 -->
+<div class="hot">
+    <div class="container">
+        <h2 class="content_type"><a href="#">热销游戏</a></h2>
+        <hr class="content_line" />
+        <div class="row">
+            <div class="col-sm-4">
+                <h3><a href="#">绝地求生</a></h3>
+                <a href="#"><img src="images/1.jpg" class="img-responsive" alt="绝地求生" /></a>
+                <div>
+                    <p class="glyphicon glyphicon-thumbs-up">多种语言可供选择</p>
+                    <div class="cut">
+                        <span><a class="morebtn">添加到购物车</a></span>
+                        <span><h6>一口价：￥98.00</h6></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <h3><a href="#">NBA 2K18</a></h3>
+                <img src="images/2.jpg" class="img-responsive" alt="NBA 2K18" />
+                <div>
+                    <p class="glyphicon glyphicon-thumbs-up">多种语言可供选择</p>
+                    <div class="cut">
+                        <span><a class="morebtn">添加到购物车</a></span>
+                        <span><h6>一口价：￥199.00</h6></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <h3><a href="#">饥荒</a></h3>
+                <img src="images/3.jfif" class="img-responsive" alt="饥荒" />
+                <div>
+                    <p class="glyphicon glyphicon-thumbs-up">多种语言可供选择</p>
+                    <div class="cut">
+                        <span><a class="morebtn">添加到购物车</a></span>
+                        <span><h6>一口价：￥24.00</h6></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--标签组件-->
+<div class="Tab-summary">
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li><a class="active" href="#tab-coming" role="tab" data-toggle="tab">即将推出</a></li>
+            <li><a href="#tab-new" role="tab" data-toggle="tab">新品</a></li>
+            <li><a href="#tab-cheap" role="tab" data-toggle="tab">优惠</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-coming">
+                <div class="row feature">
+                    <div class="col-sm-8 col-sm-8_left">
+                        <a class="right-content" href="#coming_right">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/1.jpg">
+                                        <h3>绝地求生</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>发售时间：2020年2月29日</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="right-content" href="#coming_right1">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/2.jpg">
+                                        <h3>NBA 2K18</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>发售时间：2020年2月29日</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="right-content" href="#coming_right2">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/3.jfif">
+                                        <h3>饥荒</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>发售时间：2020年2月29日</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right">
+                            <dt><img src="images/1.jpg"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2017.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right1">
+                            <dt><img src="images/2.jpg"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2007.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="content.html" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right2">
+                            <dt><img src="images/3.jfif"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2027.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-new">
+                <div class="row feature">
+                    <div class="col-sm-8 col-sm-8_left">
+                        <a class="right-content" href="#coming_right3">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/1.jpg">
+                                        <h3>绝地求生</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>销量：233333份</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="right-content" href="#coming_right4">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/2.jpg">
+                                        <h3>NBA 2K18</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>销量：233333份</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="right-content" href="#coming_right5">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/3.jfif">
+                                        <h3>饥荒</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>销量：233333份</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right3">
+                            <dt><img src="images/1.jpg"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2017.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right4">
+                            <dt><img src="images/2.jpg"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2007.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right5">
+                            <dt><img src="images/3.jfif"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2027.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-cheap">
+                <div class="row feature">
+                    <div class="col-sm-8 col-sm-8_left">
+                        <a class="right-content" href="#coming_right6">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/1.jpg">
+                                        <h3>绝地求生</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>优惠：原价下降20%</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="right-content" href="#coming_right7">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/2.jpg">
+                                        <h3>NBA 2K18</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>优惠：原价下降20%</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="right-content" href="#coming_right8">
+                            <div class="blog_list">
+                                <div class="blog_para">
+                                    <p class="para">
+                                        <img src="images/3.jfif">
+                                        <h3>饥荒</h3>
+                                    <p>标签：独立 休闲</p>
+                                    <p>游戏环境：Window 8以上</p>
+                                    <p>游戏大小：16G</p>
+                                    <p>优惠：原价下降20%</p>
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right6">
+                            <dt><img src="images/1.jpg"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2017.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right7">
+                            <dt><img src="images/2.jpg"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2007.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-4 col-sm-4_right">
+                        <dl id="coming_right8">
+                            <dt><img src="images/3.jfif"></dt>
+                            <dd>游戏类型：体育竞技</dd>
+                            <dd>游戏制作：2K Sports</dd>
+                            <dd>游戏发行：2K Games</dd>
+                            <dd>游戏平台：PC/XboxOne/PS4/NS</dd>
+                            <dd>上市时间：2027.09.15(PC)</dd>
+                            <dd>《NBA 2K18》是2K games旗下经典NBA系列新作。作为经典篮球竞技类游戏，这款游戏将带领玩家体验最真实、最刺激的篮球比赛，众多大牌球星等待玩家的对抗。该作更加注重真实性和细节。</dd>
+                            <dd><a class="btn btn-success" href="#" role="button">了解详情</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 品牌介绍 -->
+<div class="container" id="summary-container">
+    <h2 class="content_type"><a href="#">合作公司</a></h2>
+    <hr class="content_line" />
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="img-circle" src="images/logo1.jpg" alt="中餐品牌" \>
+            <h2>任天堂</h2>
+            <p>任天堂开发了游戏史上最热销游戏系列超级马里奥和精灵宝可梦，以及全球媒体综合评价最高的塞尔达传说系列。2007年，任天堂的市值排在日本第二位。任天堂DS累积销量接近1.5亿台。 2009全球最佳企业40强排行榜，任天堂排名全球第一。任天堂在全球游戏业中始终坚持反对暴力和色情， 并以开发优秀的全年龄游戏为已任，保持着弥足珍贵的社会责任和企业操守。2016年4月27日，任天堂通过官方推特确认开发代号为NX的次世代全新概念的游戏主机将于2017年3月发售。</p>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle" src="images/logo2.jpg" alt="西餐品牌" \>
+            <h2>育碧</h2>
+            <p>育碧娱乐软件公司(Ubisoft Entertainment)是一家跨国的游戏制作、发行和代销商。作为多媒体工业的佼佼者，其广泛的业务稳步扩展，在和各老牌游戏公司合作的基础上，也在不断推出独特的产品，加强自己在国际市场上的影响力。 其中优秀的作品有《雷曼》(Rayman)、《刺客信条》系列(Assassin's Creed)、《波斯王子》(Prince of Persia)、《细胞分裂》（Tom Clancy's Splinter Cell）、《彩虹六号》系列（Tom Clancy's Rainbow Six）、《看门狗》系列（Watch Dogs）等。</p>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle" src="images/logo3.jpg" alt="日式品牌" \>
+            <h2>EAGames</h2>
+            <p>美国艺电公司（Electronic Arts，NASDAQ: ERTS，简称EA），是全球著名的互动娱乐软件公司，主要经营各种电子游戏的开发、出版以及销售业务。在美国其它城市、加拿大、英国、澳大利亚、台湾、香港等多个国家和地区均设有分公司或子公司，世界各地的雇员总数达7320人。“EAGames”是美国艺电最主要的品牌。该品牌旗下主要有动作类、角色扮演类、赛车类、格斗类游戏。除了传统盒装零售的单机游戏，EA Games还出品了一些大型多人在线网络游戏（MMO）。</p>
+        </div>
+    </div>
+</div>

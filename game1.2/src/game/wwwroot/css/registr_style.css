@@ -1,0 +1,13 @@
+body {
+    margin-bottom: 100px;
+    background: url(../images/login_bg2.jpg) no-repeat;
+    background-color:#000000;
+}
+
+h1,h3,p{
+	color:#FDFDFD;
+}
+
+.footer{
+    display:none;
+}

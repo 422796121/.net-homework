@@ -1,0 +1,264 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	list-style:none;
+	outline:none;
+}
+html{
+	height:100%;
+}
+body{
+	background:url(../images/login_bg2.jpg);
+	min-height:100%;
+	position:relative;
+}
+
+.content_type a{
+	color:#CCC;
+}
+
+.content_line{
+	color:#F00;
+}
+/* 导航栏 */
+.nav{
+	margin:10px;
+}
+
+.navbar-brand>img{
+	padding:0 0;
+	width:250px;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.navbar-default{
+	padding:1em 0;
+	background-color:#999;
+	border:1px solid #999;
+	opacity:0.8;
+	box-shadow:12px -5px 39px -12px;
+}
+
+.navbar-default .navbar-nav>li a{
+	top:10px;
+	padding:0.5em 1.5em;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:1.2em;
+	color:#FFF;
+}
+
+.navbar-default .navbar-nav>li a:hover,
+.navbar-default .navbar-nav>li a:focus{
+	background:#006;
+	color:white;
+	border-radius:6px;
+}
+.navbar-right>a{
+	color:#96b66;
+}
+.dropdown-menu{
+	background-color:#CCC;
+	border:1px solid #CCC;
+	opacity:0.8;
+}
+
+.navbar-default  .dropdown-menu>li a{
+	color:#666;
+	opacity:1;
+}
+.dropdown-menu>li a:hover,
+.dropdown-menu>li a:focus{
+	background:#006;
+	color:#000;
+	border-radius:6px;
+}
+
+
+/* 内容*/
+
+.content{
+	margin-top:120px;
+	padding-bottom:100px;
+
+}
+/* 左侧导航栏 */
+#left-carousel{
+	opacity:0.6;
+}
+
+#left-carousel a{
+	opacity:1;
+	text-decoration:none;
+}
+
+.content li{
+	font-weight:bold;
+}
+
+#left-carousel a:hover li{
+	background:#039;
+	color:#CCC;
+}
+
+/*右侧内容*/
+.setting{
+	margin-top:-19px;
+	display:none;
+	height:550px;	
+}
+
+:target{
+	display:block;
+}
+
+/*用户栏*/
+.imformation_default {
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+
+.imformation_default .col-sm-5 p {
+        display: inline;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #eea236;
+    }
+
+ .imformation_default .col-sm-offset-1 {
+        margin-top: 26px;
+}
+
+.imformation_default .col-sm-offset-1 p {
+            font-size: 16px;
+            color: #eea236;
+}
+
+ .imformation_default img {
+        height: 80px;
+        width: auto;
+}
+
+.imformation_ul {
+    margin-top: 1px;
+    border-top: 1px solid #2aabd2;
+}
+
+.imformation_default .list-group {
+    margin-top: 20px;
+}
+
+.imformation_default .list-group ul {
+        margin-top: 30px;
+}
+
+   .imformation_default .list-group li {
+        float: left;
+        margin-left: 20%;
+        color: white;
+ }
+
+/*游戏*/
+.game_list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.game_para{
+	margin-top:0;
+	
+}
+.game_para p{
+	line-height:1em;
+	color:#999;
+	font-size:12px;
+}
+
+.game_para h3{
+	color:#FFF;
+	font-size:19px;
+}
+
+.game_para p img{
+	margin-top:0;
+	height:150px;
+	width:250px;
+	float:left;
+	margin-right:2%;
+	color:#ffffff;
+}
+
+.game_para a{
+	height:20px;
+	padding-top:0px;
+}
+	/*账号*/
+#personal_setting{
+	margin-top:0px;
+	height:550px;
+}
+
+.form-last-name{
+	display:inline;
+}
+
+.form-control{
+	width:300px;
+}
+.form-group p{
+	color:#CCC;
+}
+.btn-block{
+	width:50px;
+}
+#reset_pwd{
+	margin-top:0px;
+}
+
+/* 页脚 */
+.footer p {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.8em;
+    vertical-align: middle;
+    margin: 0.4em 0;
+}
+.footer p a{
+    color: #fff;
+    text-decoration:none;
+}
+.footer {
+	position:absolute;
+	bottom:0;
+	margin-top:30px;
+    padding: 1em 0;
+    background:#003;
+	width:100%;
+	height:50px;
+}
+.footer-right ul {
+    padding: 0;
+}
+.footer-right li {
+    display: inline-block;
+    margin: 0 1em;
+}
+.footer-left {
+    float: left;
+}
+.footer-left p{
+	color:#CCC;
+}
+.footer-right {
+    float: right;
+}
+
+.btn{
+	height:30px;
+	margin:0 0;
+}

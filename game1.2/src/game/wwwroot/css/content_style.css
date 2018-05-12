@@ -1,0 +1,176 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	list-style:none;
+	outline:none;
+}
+body{
+	background:url(../images/login_bg2.jpg);
+}
+
+/* µ¼º½À¸ */
+.nav{
+	margin:10px;
+}
+
+.navbar-brand>img{
+	padding:0 0;
+	width:250px;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.navbar-default{
+	padding:1em 0;
+	background-color:#999;
+	border:1px solid #999;
+	opacity:0.8;
+	box-shadow:12px -5px 39px -12px;
+}
+
+.navbar-default .navbar-nav>li a{
+	top:10px;
+	padding:0.5em 1.5em;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:1.2em;
+	color:#FFF;
+}
+
+.navbar-default .navbar-nav>li a:hover,
+.navbar-default .navbar-nav>li a:focus{
+	background:#006;
+	color:white;
+	border-radius:6px;
+}
+.navbar-right>a{
+	color:#96b66;
+}
+.dropdown-menu{
+	background-color:#CCC;
+	border:1px solid #CCC;
+	opacity:0.8;
+}
+
+.navbar-default  .dropdown-menu>li a{
+	color:#666;
+	opacity:1;
+}
+.dropdown-menu>li a:hover,
+.dropdown-menu>li a:focus{
+	background:#006;
+	color:#000;
+	border-radius:6px;
+}
+/* ×ó²àµ¼º½À¸ */
+#left-carousel{
+	opacity:0.5;
+}
+
+#left-carousel a{
+	opacity:1;
+	text-decoration:none;
+}
+
+#left-carousel li{
+	font-weight:bold;
+}
+
+#left-carousel a:hover li{
+	background:#039;
+	color:#CCC;
+}
+
+
+/*Ò³½Å */
+.footer p {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.8em;
+    vertical-align: middle;
+    margin: 0.4em 0;
+}
+.footer p a{
+    color: #fff;
+    text-decoration:none;
+}
+.footer {
+	margin-top:30px;
+    padding:0.1em 0 1em 0;
+    background-color:#003;
+}
+.footer-right ul {
+    padding: 0;
+}
+.footer-right li {
+    display: inline-block;
+    margin: 0 1em;
+}
+.footer-left {
+    float: left;
+}
+.footer-left p{
+	color:#CCC;
+}
+.footer-right {
+    float: right;
+}
+
+
+.single{
+	text-align:center;
+}
+.single h2{
+	text-align:center;
+	font-size:2.8em;
+	text-transform:capitalize;
+	color:#36F;
+	font-weight:bold;
+}
+.single h4{
+	font-size:1.5em;
+	color:#999;
+	margin:1em 0;
+	text-align:center;	
+}
+.single h2 img{
+	text-align:center;
+}
+
+.single div img{
+	width:750px;
+	padding-left:100px;
+}
+ul.blog-ic{
+	margin:1em 0;
+}
+ul.blog-ic li{
+	display:inline-block;
+    color:white;
+}
+ul.blog-ic li span{
+	color:#000;
+	padding:0.4em 0.8em 0.2em 0;
+	display:block;
+	font-size:1.2em;
+}
+.comment-info h5,.comment-info h6{
+	color:#CCC;
+}
+
+.container{
+	margin-top:120px;
+
+}
+
+.content-form h3{
+	color:#CCC;
+}
+.content-form ,.comments{
+	padding-left:125px;
+}
+
+.blog-ic li {
+    color: white;
+}

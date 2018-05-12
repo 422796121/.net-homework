@@ -1,0 +1,348 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	list-style:none;
+	outline:none;
+}
+
+body{
+	background:url(../images/login_bg.jpg);
+}
+
+.content_type a{
+	color:#CCC;
+    font-size:23px;
+}
+
+.content_line{
+	color:#F00;
+}
+/* 导航栏 
+.nav{
+	margin:10px;
+}
+
+.navbar-brand>img{
+	padding:0 0;
+	width:250px;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.navbar-default{
+	padding:1em 0;
+	background-color:#999;
+	border:1px solid #999;
+	opacity:0.8;
+	box-shadow:12px -5px 39px -12px;
+}
+
+.navbar-default .navbar-nav>li a{
+	top:10px;
+	padding:0.5em 1.5em;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:1.2em;
+	color:#FFF;
+}
+
+.navbar-default .navbar-nav>li a:hover,
+.navbar-default .navbar-nav>li a:focus{
+	background:#006;
+	color:white;
+	border-radius:6px;
+}
+.navbar-right>a{
+	color:#96b66;
+}
+.dropdown-menu{
+	background-color:#CCC;
+	border:1px solid #CCC;
+	opacity:0.8;
+}
+
+.navbar-default  .dropdown-menu>li a{
+	color:#666;
+	opacity:1;
+}
+.dropdown-menu>li a:hover,
+.dropdown-menu>li a:focus{
+	background:#006;
+	color:#000;
+	border-radius:6px;
+}*/
+
+/* 搜索栏 */
+.container_top{
+	margin-top:6%;
+	height:200px;
+}
+
+.container_top .col-sm-7{
+	height:160px;
+}
+
+.container_top .input-group{
+	margin-top:8%;
+}
+
+.input-group-addon{
+	background:#666;
+	border:1px solid #666;
+	color:#FFF;
+	opacity:0.6;
+}
+
+.container_top img{
+	opacity:0.3;
+	margin-left:30px;
+}
+
+input[type="text"]{
+	opacity:0.7;
+    font-size:1em;
+}
+
+/* 左侧导航栏 */
+#left-carousel{
+	opacity:0.5;
+}
+
+#left-carousel a{
+	opacity:1;
+	text-decoration:none;
+}
+
+.content li{
+	font-weight:bold;
+}
+
+#left-carousel a:hover li{
+	background:#039;
+	color:#CCC;
+}
+
+/* 广告栏 */
+.carousel{
+	height:500px;
+	background-color:#000;
+	margin-bottom:30px;
+}
+
+.carousel .item{
+	height:500px;
+	background-color:#000;
+}
+
+
+.carousel img{
+	width:100%;
+	background-color:#000;
+}
+
+.carousel-caption p{
+	margin-bottom:20px;
+	font-size:16px;
+	line-height:28px;
+}
+.carousel-caption .btn{
+	border:none;
+}
+
+
+
+
+/* 页脚 -->
+.footer p {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.8em;
+    vertical-align: middle;
+    margin: 0.4em 0;
+}
+.footer p a{
+    color: #fff;
+    text-decoration:none;
+}
+.footer {
+	margin-top:30px;
+    padding: 1em 0;
+    background-color:#003;
+}
+.footer-right ul {
+    padding: 0;
+}
+.footer-right li {
+    display: inline-block;
+    margin: 0 1em;
+}
+.footer-left {
+    float: left;
+}
+.footer-left p{
+	color:#CCC;
+}
+.footer-right {
+    float: right;
+}
+
+
+
+.btn{
+	padding:0.5em 0;
+	margin:1em 0;
+	border:1px solid #eee;
+}*/
+
+/*热销*/
+.hot{
+	padding:0.5em 0;
+	margin:1.5em 0;
+	border:none;
+}
+
+.hot h3{
+	color:#C30;
+	font-size:1.5em;
+	font-weight:bold;
+	padding:0 0 0.5em;
+	border-bottom:2px solid #eee;
+}
+
+.hot h3 a{
+	color:#C30;
+}
+
+.hot p{
+	color:#5fa022;
+	font-size:1em;
+	font-weight:400;
+	line-height:1.8em;
+	margin:1em 0;
+}
+
+.hot h6{
+	color:#c15102;
+	font-size:1.3em;
+	font-weight:400;
+	line-height:1.8em;
+	margin:0.3em 0;
+}
+
+a.morebtn{
+	display:block;
+	background-color:#d96b66;
+	color:#fff;
+	font-size:1em;
+	font-weight:400;
+	padding:10px 16px;
+	border-radius:3px;
+	text-decoration:none;
+	transition:0.5s all ease;
+}
+a.morebtn:hover{
+	background-color:#5fa022;
+}
+
+/*标签*/
+
+.Tab-summary {
+    background: #122B40;
+    margin: 1.5em 0;
+}
+
+.tab-content {
+    background: #122B40;
+    height: 638px;
+}
+
+.nav-tabs{
+	border:none;
+	margin-bottom:0;
+}
+
+.nav-tabs li a{
+	color:#999;
+}
+
+.blog_list{
+	height:210px;
+	margin-top:-18px;
+}
+
+
+.blog_para p{
+	line-height:1.2em;
+	color:#999;
+	font-size:15px;
+}
+
+.blog_para h3{
+	color:#FFF;
+	font-size:20px;
+}
+
+.blog_para p img{
+	margin-top:0;
+	height:210px;
+	width:330px;
+	float:left;
+	margin-right:2%;
+	color:#ffffff;
+}
+
+.right-content:hover{
+	text-decoration:none;
+}
+.right-content:hover .blog_list{
+	background:#036;
+}
+
+.right-content:hover .col-sm-4_right{
+	background:#036;
+}
+
+.col-sm-4_right{
+	margin-left:-30px;
+}
+.col-sm-4_right img{
+	width:389px;
+}
+.col-sm-4_right dd{
+	font-size:1.5em;
+	color:#CCC;
+	font-size:20px;
+}
+
+dl{
+	display:none;
+}
+:target{
+	display:block;
+}
+
+.col-sm-4_right .btn{
+	margin-left:150px;
+}
+
+.btn-success{
+	border:none;
+}
+
+/*合作公司*/
+#summary-container {
+	margin-top:1em;
+}
+#summary-container h2{
+	color:#FFF;
+    font-size:20px;
+}
+
+#summary-container p{
+	color:#CCC;
+	line-height:1.5em;
+}

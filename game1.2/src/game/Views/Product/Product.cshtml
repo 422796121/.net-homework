@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "NBA2K18";
+}
+
+<link rel="stylesheet" href="~/css/content_style.css" />
+
+<div class="container">
+    <div class="row">
+        <!--左侧子导航栏-->
+        <div class="col-sm-3" id="left-carousel">
+            <ul class="list-group">
+                <li class="list-group-item">浏览分类</li>
+                <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">热销</li></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">新品</li></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">即将推出</li></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index"><li class="list-group-item">优惠</li></a>
+                <li class="list-group-item">按类型浏览</li>
+                <a asp-area="" asp-controller="Home" asp-action="Simulation"><li class="list-group-item">休闲模拟</li></a>
+                <a asp-area="" asp-controller="Home" asp-action="Shooting"><li class="list-group-item">动作射击</li></a>
+                <a asp-area="" asp-controller="Home" asp-action="Sport"><li class="list-group-item">体育竞速</li></a>
+                <a asp-area="" asp-controller="Home" asp-action="Rpg"><li class="list-group-item">角色扮演</li></a>
+                <li class="list-group-item">最近查看</li>
+                <a asp-area="" asp-controller="Product" asp-action="Product"><li class="list-group-item">NBA 2K17</li></a>
+            </ul>
+        </div>
+        <!--右侧文章内容-->
+        <div class="col-sm-9">
+            <div class="content">
+                <!--文章内容-->
+                <div class="single">
+                    <h2>NBA2K17</h2>
+                    <div>
+                        <h4>体育游戏</h4>
+                        <img src="~/images/content1.jpg" class="img-responsive img-game" alt="文章配图说明">
+                        <ul class="blog-ic">
+                            <li><a class="btn btn-primary pull-right" href="#" role="button" target="_blank">收藏游戏</a></a></li>
+                            <li><a class="btn btn-primary pull-right" href="#" role="button" target="_blank">立即购买</a></li>
+                            <li><a class="btn btn-primary pull-right" href="#" role="button" target="_blank">加入购物车</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--评论表单-->
+                <div class="content-form">
+                    <h3>请按提示填写您的信息：</h3>
+                    <form action="http://www.zhbit.com">
+                        <input type="text" placeholder="请输入您的姓名" required>
+                        <input type="text" placeholder="请输入您的电话号码" required>
+                        <textarea placeholder="请输入您的评论"></textarea>
+                        <input type="submit" value="提交评论">
+                    </form>
+                </div>
+                <!--评论记录-->
+                <div class="comments">
+                    <h3></h3>
+                    <div class="comment-info">
+                        <h5>Johnson Zhao</h5>
+                        <p></p>
+                        <h6>2018-3-29 11:15</h6>
+                        <a>回复评论</a>
+                    </div>
+                    <div class="comment-info">
+                        <h5>Johnson Zhao</h5>
+                        <p></p>
+                        <h6>2018-3-29 11:15</h6>
+                        <a>回复评论</a>
+                    </div>
+                    <div class="comment-info">
+                        <h5>Johnson Zhao</h5>
+                        <p></p>
+                        <h6>2018-3-29 11:15</h6>
+                        <a>回复评论</a>
+                    </div>
+                    <div class="comment-info">
+                        <h5>Johnson Zhao</h5>
+                        <p></p>
+                        <h6>2018-3-29 11:15</h6>
+                        <a>回复评论</a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    background: #CCC;
+}
+
+.main {
+    width: 100%;
+    height: 590px;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+.top {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #000;
+}
+
+.downMenu {
+    width: 100%;
+    height: 30px;
+    font: normal normal 20px "宋体";
+}
+
+#search {
+    margin-left: 520px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#img1 {
+    margin-left: 330px;
+}
+
+#logo {
+    font: normal normal 20px "宋体";
+    padding-bottom: 5px;
+}
+
+#add {
+    margin-left: 445px;
+}
+
+#last {
+    margin-left: 800px;
+}
+
+#d {
+    padding-bottom: 30px;
+    margin-left: 1690px;
+}
+
+/*
+a:link {
+    font-size: 20px;
+}*/
+
+a:visited {
+    color: darkgray;
+}
+
+a:hover {
+    color: #C00;
+}
+
+a:active {
+    color: #C00;
+}
+
+#img5 {
+    width: 100%;
+    height: 80px;
+}
+
+#indent {
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+    padding-left: 300px;
+    padding-top: 60px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#font1 {
+    margin-left: 530px;
+    font: italic normal 16px "黑体";
+}
+
+#font2 {
+    margin-left: 770px;
+    font: normal normal 16px "黑体";
+}
+
+#tr1 {
+    background-color: #666;
+}
+
+#tr2 {
+    background-color: #666;
+}
